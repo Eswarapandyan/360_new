@@ -1,7 +1,7 @@
 "use client";
 
 import { useActionState } from "react";
-import { createAssignment, type AssignmentState } from "./actions";
+import { createAssignment, type AssignmentState } from "../actions";
 import { Button } from "@/components/ui/button";
 import type { OrgMember } from "@/lib/types";
 

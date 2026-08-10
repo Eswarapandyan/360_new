@@ -1,7 +1,7 @@
 import { notFound } from "next/navigation";
 import { createClient } from "@/lib/supabase/server";
-import { requireOrgMember } from "@/lib/org";
-import { ReviewForm, type QuestionWithCompetency } from "./review-form";
+import { requireOrgMember } from "@/lib/server/org";
+import { ReviewForm, type QuestionWithCompetency } from "./_components/review-form";
 
 export default async function ReviewPage({
   params,

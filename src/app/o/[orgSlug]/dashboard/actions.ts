@@ -2,7 +2,7 @@
 
 import { revalidatePath } from "next/cache";
 import { createClient } from "@/lib/supabase/server";
-import { sendInviteEmail } from "@/lib/email";
+import { sendInviteEmail } from "@/lib/server/email";
 
 export interface InviteState {
   error: string | null;

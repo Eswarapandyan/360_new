@@ -1,7 +1,7 @@
 import { redirect } from "next/navigation";
 import { createClient } from "@/lib/supabase/server";
-import { requireOrgMember } from "@/lib/org";
-import { NewCycleForm } from "./new-cycle-form";
+import { requireOrgMember } from "@/lib/server/org";
+import { NewCycleForm } from "./_components/new-cycle-form";
 
 export default async function NewCyclePage({
   params,

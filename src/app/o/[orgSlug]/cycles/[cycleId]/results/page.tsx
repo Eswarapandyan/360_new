@@ -1,5 +1,5 @@
 import { createClient } from "@/lib/supabase/server";
-import { requireOrgMember } from "@/lib/org";
+import { requireOrgMember } from "@/lib/server/org";
 import type { CompetencyResult } from "@/lib/types";
 import {
   Card,
@@ -7,7 +7,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { ResultsRadarChart, type RadarDatum } from "./results-radar-chart";
+import { ResultsRadarChart, type RadarDatum } from "./_components/results-radar-chart";
 
 const BUCKETS: {
   key: "self" | "manager" | "peer" | "direct_report";

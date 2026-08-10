@@ -1,7 +1,7 @@
 "use client";
 
 import { useActionState } from "react";
-import { submitReview, type SubmitReviewState } from "./actions";
+import { submitReview, type SubmitReviewState } from "../actions";
 import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";

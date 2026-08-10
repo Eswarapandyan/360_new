@@ -1,7 +1,7 @@
 "use client";
 
 import { useTransition } from "react";
-import { setCycleStatus } from "./actions";
+import { setCycleStatus } from "../actions";
 import { Button } from "@/components/ui/button";
 import type { CycleStatus } from "@/lib/types";
 

@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { createClient } from "@/lib/supabase/server";
-import { requireOrgMember } from "@/lib/org";
+import { requireOrgMember } from "@/lib/server/org";
 import type { OrgMember, ReviewCycle } from "@/lib/types";
 import { buttonVariants } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -10,7 +10,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { InviteForm } from "./invite-form";
+import { InviteForm } from "./_components/invite-form";
 
 export default async function DashboardPage({
   params,

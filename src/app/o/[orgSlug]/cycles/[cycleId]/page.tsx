@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { createClient } from "@/lib/supabase/server";
-import { requireOrgMember } from "@/lib/org";
+import { requireOrgMember } from "@/lib/server/org";
 import type { OrgMember, ReviewCycle } from "@/lib/types";
 import { Badge } from "@/components/ui/badge";
 import { buttonVariants } from "@/components/ui/button";
@@ -11,8 +11,8 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { AssignmentForm } from "./assignment-form";
-import { CycleStatusButtons } from "./cycle-status-buttons";
+import { AssignmentForm } from "./_components/assignment-form";
+import { CycleStatusButtons } from "./_components/cycle-status-buttons";
 
 interface AssignmentRow {
   id: string;

@@ -1,7 +1,7 @@
 "use client";
 
 import { useActionState } from "react";
-import { inviteMember, type InviteState } from "./actions";
+import { inviteMember, type InviteState } from "../actions";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 
