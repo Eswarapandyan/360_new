@@ -1,1 +1,2 @@
 @AGENTS.md
+@DEV_GUIDE.md
